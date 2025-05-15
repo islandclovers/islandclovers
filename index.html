@@ -15,6 +15,12 @@
           <h1>Island Clovers</h1>
         </a>
       </div>
+      <div class="hamburger">
+  <span class="line line1"></span>
+  <span class="line line2"></span>
+  <span class="line line3"></span>
+      </div>
+      
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -145,5 +151,23 @@
       });
     });
   </script>
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('header nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMenu.classList.toggle('open');
+    });
+
+    // Close the mobile menu when a link is clicked
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+      });
+    });
+  </script>
+
 </body>
 </html>
