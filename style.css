@@ -292,23 +292,27 @@ footer a:hover {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    width: 30px;
-    height: 30px;
+    width: 40px; /* Increased width */
+    height: 40px; /* Increased height */
     cursor: pointer;
     z-index: 101; /* Ensure it's above the header content */
+    display: flex; /* Use flexbox to center the lines */
+    flex-direction: column; /* Stack lines vertically */
+    justify-content: center; /* Center lines vertically */
+    align-items: center; /* Center lines horizontally */
   }
 
 .hamburger.line {
     display: block;
-    width: 100%;
-    height: 3px;
+    width: 80%; /* Make lines slightly shorter than the button */
+    height: 4px; /* Increased thickness */
     background-color: #fff; /* Ensure the lines are white */
-    margin: 6px 0;
+    margin: 4px 0; /* Adjust spacing between lines */
     transition: transform 0.3s ease-in-out;
   }
 
 .hamburger.open.line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg); /* Removed translate for simpler animation */
   }
 
 .hamburger.open.line2 {
@@ -316,7 +320,7 @@ footer a:hover {
   }
 
 .hamburger.open.line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg); /* Removed translate for simpler animation */
   }
 
   header.container {
