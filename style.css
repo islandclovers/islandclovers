@@ -1,10 +1,10 @@
 /* style.css */
 body {
-  font-family: 'Open Sans', sans-serif; /* A clean and readable sans-serif font */
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8; /* Light background */
-  color: #333; /* Dark text for readability */
+  background-color: #f8f8f8;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -16,10 +16,10 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #689F38; /* A natural green */
+  background-color: #689F38;
   color: #fff;
   padding: 1rem 0;
-  position: sticky; /* Keep header at the top on scroll */
+  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -38,9 +38,9 @@ header.logo a {
 }
 
 header.logo img {
-  height: 40px; /* Adjust as needed */
-  max-height: 60px; /* Limit maximum height */
-  max-width: 150px; /* Limit maximum width */
+  height: 40px;
+  max-height: 60px;
+  max-width: 150px;
   margin-right: 10px;
 }
 
@@ -50,7 +50,7 @@ header h1 {
 }
 
 header nav {
-  display: flex; /* Initially show the full navigation for larger screens */
+  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
@@ -71,12 +71,12 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #A5D6A7; /* Light green on hover */
+  color: #A5D6A7;
 }
 
 /* Hero Section Styles */
 .hero {
-  background-color: #f5f5f5; /* Light grey/off-white */
+  background-color: #f5f5f5;
   padding: 4rem 0;
 }
 
@@ -109,8 +109,8 @@ header nav a:hover {
 }
 
 .hero-image img {
-  max-width: 100%; /* Make the image responsive within its container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -290,10 +290,10 @@ footer a:hover {
 .hamburger {
     display: block; /* Show the hamburger button on mobile */
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 40px; /* Increased width */
-    height: 40px; /* Increased height */
+    top: 0.5rem; /* Adjusted top position to be closer to the top */
+    right: 0.5rem; /* Adjusted right position */
+    width: 48px; /* Increased width */
+    height: 48px; /* Increased height */
     cursor: pointer;
     z-index: 101; /* Ensure it's above the header content */
     display: flex; /* Use flexbox to center the lines */
@@ -304,15 +304,15 @@ footer a:hover {
 
 .hamburger.line {
     display: block;
-    width: 80%; /* Make lines slightly shorter than the button */
-    height: 4px; /* Increased thickness */
+    width: 60%; /* Slightly shorter lines */
+    height: 5px; /* Increased thickness */
     background-color: #fff; /* Ensure the lines are white */
-    margin: 4px 0; /* Adjust spacing between lines */
+    margin: 5px 0; /* Adjust spacing between lines */
     transition: transform 0.3s ease-in-out;
   }
 
 .hamburger.open.line1 {
-    transform: rotate(-45deg); /* Removed translate for simpler animation */
+    transform: rotate(-45deg);
   }
 
 .hamburger.open.line2 {
@@ -320,10 +320,12 @@ footer a:hover {
   }
 
 .hamburger.open.line3 {
-    transform: rotate(45deg); /* Removed translate for simpler animation */
+    transform: rotate(45deg);
   }
 
   header.container {
     position: relative; /* Needed for absolute positioning of hamburger */
+    padding-top: 1rem; /* Add some padding at the top of the header container */
+    padding-bottom: 1rem; /* Add some padding at the bottom */
   }
 }
