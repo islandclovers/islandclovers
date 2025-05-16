@@ -38,10 +38,9 @@ header.logo a {
 }
 
 header.logo img {
-  height: 40px;
-  max-height: 60px;
-  max-width: 150px;
-  margin-right: 10px;
+  height: 40px; /* Adjust as needed */
+  max-height: 60px; /* Limit maximum height */
+  max-width: 150px; /* Limit maximum width */
   margin-right: 10px;
 }
 
@@ -239,6 +238,9 @@ footer a:hover {
     width: 100%;
     background-color: #558B2F; /* Darker green for the mobile menu background */
     margin-top: 0.5rem;
+    position: absolute; /* Position below the header */
+    top: 100%;
+    left: 0;
   }
 
   header nav.open {
@@ -319,11 +321,5 @@ footer a:hover {
 
   header.container {
     position: relative; /* Needed for absolute positioning of hamburger */
-  }
-
-  header nav {
-    position: absolute;
-    top: 100%; /* Position below the header */
-    left: 0;
   }
 }
