@@ -290,10 +290,10 @@ footer a:hover {
 .hamburger {
     display: block; /* Show the hamburger button on mobile */
     position: absolute;
-    top: 0.5rem; /* Adjusted top position to be closer to the top */
+    top: 0.5rem; /* Adjusted top position */
     right: 0.5rem; /* Adjusted right position */
-    width: 48px; /* Increased width */
-    height: 48px; /* Increased height */
+    width: 50px; /* Increased width */
+    height: 50px; /* Increased height */
     cursor: pointer;
     z-index: 101; /* Ensure it's above the header content */
     display: flex; /* Use flexbox to center the lines */
@@ -304,10 +304,10 @@ footer a:hover {
 
 .hamburger.line {
     display: block;
-    width: 60%; /* Slightly shorter lines */
-    height: 5px; /* Increased thickness */
-    background-color: #fff; /* Ensure the lines are white */
-    margin: 5px 0; /* Adjust spacing between lines */
+    width: 70%; /* Slightly shorter lines */
+    height: 6px; /* Increased thickness */
+    background-color: #000; /* Changed color to black */
+    margin: 6px 0; /* Adjust spacing between lines */
     transition: transform 0.3s ease-in-out;
   }
 
